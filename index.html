@@ -19,9 +19,9 @@
         </a>
         <nav class="header-nav">
         <ul class="site-nav list">
-            <li class="nav-item"><a href="./index.html" class="nav-current link current">Cтудія</a></lic>
-            <li class="nav-item"><a href="./portfolio.html" class="nav-portfolio link">Портфоліо</a></li>
-            <li class="nav-item"><a href="" class="nav-contacts link">Контакти</a></li>
+            <li class="nav-item"><a href="./index.html" class="nav-current nav link current">Cтудія</a></lic>
+            <li class="nav-item"><a href="./portfolio.html" class="nav-portfolio nav link">Портфоліо</a></li>
+            <li class="nav-item"><a href="" class="nav-contacts nav link">Контакти</a></li>
         </ul>
         </nav>
         <ul class="header-contact list">
@@ -46,12 +46,7 @@
     <section class="hero section">
         <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
-                <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                        <button type="button" class="modal-button" data-modal-close>Закрити</button>
-                    </div>
-                </div>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>    
         </div>
         </section>
     <section class="features-section section">
@@ -88,7 +83,7 @@
                             <use href="./images/symbol-defs.svg#astronaut"></use>
                         </svg>
                     </div>
-                    <h3 class="features-title">Пунктуальнысть</h3><p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    <h3 class="features-title">Пунктуальність</h3><p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
             </ul>
         </div>
@@ -97,9 +92,30 @@
         <div class="container">
             <h2 class="activity-title">Чим ми займаємось</h2>
             <ul class="activity-list list">
-                <li class="activity-item"><img src="./images/programs.jpg" alt="Програмування" width="370" height="294"></li>
-                <li class="activity-item"><img src="./images/interface.jpg" alt="Інтерфейс" width="370" height="294"></li>
-                <li class="activity-item"><img src="./images/design.jpg" alt="Дизайн" width="370" height="294"></li>
+                    <li class="activity-item">
+                        <div class="activity-thumb">
+                            <img src="./images/programs.jpg" alt="Програмування" width="370" height="294">
+                            <div class="activity-block">
+                                <h3 class="activity-text">Десктопні додатки</h3>
+                            </div>
+                        </div>
+                    </li>
+                <li class="activity-item">
+                    <div class="activity-thumb">
+                        <img src="./images/interface.jpg" alt="Інтерфейс" width="370" height="294">
+                        <div class="activity-block">
+                            <h3 class="activity-text">Мобільні додатки</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-thumb">
+                        <img src="./images/design.jpg" alt="Дизайн" width="370" height="294">
+                        <div class="activity-block">
+                            <h3 class="activity-text">Дизайнерські рішення</h3>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
@@ -329,6 +345,11 @@
                 </div>
             </div>
     </footer>
+        <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="modal-button" data-modal-close>Закрити</button>
+                </div>
+        </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
